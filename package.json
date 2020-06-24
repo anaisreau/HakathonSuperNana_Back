@@ -1,7 +1,6 @@
 {
   "name": "back",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,9 +8,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "mysql2": "^2.1.0",
-    "sequelize": "^6.0.0-beta.7"
-  }
+    "sequelize": "^6.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anaisreau/HakathonSuperNana_Back.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anaisreau/HakathonSuperNana_Back/issues"
+  },
+  "homepage": "https://github.com/anaisreau/HakathonSuperNana_Back#readme",
+  "description": ""
 }
