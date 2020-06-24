@@ -1,5 +1,4 @@
-"use strict"
-
+'use strict'
 
 module.exports = (sequelize, Datatypes) => {
     const Clinic = sequelize.define("Clinic", {
@@ -14,9 +13,10 @@ module.exports = (sequelize, Datatypes) => {
     })
 
     Clinic.associate = models => {
-        Clinic.BelongsToMany(models.Speciality, {
+        Clinic.belongsToMany(models.Speciality, {
             through: 'Price'
         });
     };
+    
     return Clinic;
 }
