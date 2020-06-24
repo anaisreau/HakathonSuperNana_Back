@@ -7,7 +7,9 @@ app.use(bodyParser({
     extended: true
 }))
 
-require('./clinic')(app)
+const ClinicRouter = require('./routes/clinic')
+
+app.use('/', (ClinicRouter))
 
 models
     .sequelize

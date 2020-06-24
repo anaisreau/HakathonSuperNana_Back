@@ -11,7 +11,9 @@ module.exports = (sequelize, Datatypes) => {
 
     Speciality.associate = models => {
         Speciality.belongsToMany(models.Clinic, {
-            through: 'Price', timestamps : false
+            through: 'Price', 
+            //prices: Datatypes.INTEGER,
+            timestamps : false
         })
     }
     return Speciality 
