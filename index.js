@@ -8,7 +8,7 @@ app.use(bodyParser({
     extended : true
 }))
 
-app.use('/')
+
 
 models
     .sequelize
