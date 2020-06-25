@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Pyewaket83!",
-    "database": "clinic_surgery",
+    "password": "subwoofer",
+    "database": "sunday",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

@@ -20,9 +20,8 @@ module.exports = (sequelize, Datatypes) => {
 
     Clinic.associate = models => {
         Clinic.belongsToMany(models.Speciality, {
-            through: models.Price,
+            through: "Price",
             foreignKey : 'ClinicId',
-            
         });
         
     };

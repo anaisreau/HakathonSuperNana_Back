@@ -13,7 +13,7 @@ module.exports = (sequelize, Datatypes) => {
 
     Speciality.associate = models => {
         Speciality.belongsToMany(models.Clinic, {
-            through: models.Price, 
+            through: "Price", 
             foreignKey: 'SpecialityId',
         })
     }
