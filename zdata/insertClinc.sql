@@ -1,0 +1,11 @@
+INSERT INTO `clinic-surgery`.`Clinics`(`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("Dr. HE Obesity Clinic", "Meşrutiyet, Eser Palas, Nişantaşı, Vali Konağı Cd. No:125 D:3", "34365", "Istanbul","Turquie");
+INSERT INTO `clinic-surgery`.`Clinics` (`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("Memorial Ataşehir Hospital", "Küçükbakkalköy Mah. Vedat Günyol Cad. No: 28-30", "34758", "Istanbul", "Turquie");    
+INSERT INTO `clinic-surgery`.`Clinics` (`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("Sachsenhausen Hospital", "Schulstraße 31", "60594", "Francfort", "Allemagne");
+INSERT INTO `clinic-surgery`.`Clinics` (`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("Dunya IVF Clinic", "23 Kadife Sokak", "0", "Kyrenia", "Chypre");       
+INSERT INTO `clinic-surgery`.`Clinics` (`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("Memorial Ataşehir Hospital", "Küçükbakkalköy Mah. Vedat Günyol Cad. No: 28-30", "34758", "Istanbul", "Turquie");
+INSERT INTO `clinic-surgery`.`Clinics` (`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("Medicana Hospitals Group", "Bahçelievler Mh.", "34180", "Istanbul", "Turquie");
+INSERT INTO `clinic-surgery`.`Clinics` (`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("Estetik International Clinic", "Quasar Tower- Fulya Mahallesi, Büyükdere Cd. Quasar Tower No:76 ", "34394", "Istanbul", "Turquie");       
+INSERT INTO `clinic-surgery`.`Clinics` (`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("Adem and Havva Medical Center", "Cumhuriyet, Cumhuriyet Mahallesi, İncirli Dede Caddesi, No:6/2 Anthill Towers", "34381", "Istanbul", "Turquie");
+INSERT INTO `clinic-surgery`.`Clinics` (`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("MDental Clinic", "Teréz krt. 55-57", "1062", "Budapest", "Hongrie");
+INSERT INTO `clinic-surgery`.`Clinics` (`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("Bangkok International Dental Center", "157, 159 Ratchadaphisek Rd, Khwaeng Din Daeng, Din Daeng, Krung Thep Maha Nakhon", "10400", "Bangkok", "Thailande");
+INSERT INTO `clinic-surgery`.`Clinics` (`name`, `adress`, `zip_code`, `city`, `country`) VALUES ("Albusdent Dentistry Centre", "Balicka 73", "30149", "Cracovie", "Pologne");

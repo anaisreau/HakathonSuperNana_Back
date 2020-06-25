@@ -1,0 +1,20 @@
+
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (1, 8, 3856);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (2, 1, 1890);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (2, 2, 2308);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (2, 8, 3000);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (3, 7, 6247);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (4, 5, 4470);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (4, 6, 3353);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (6, 5, 3500);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (6, 6, 2500);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (7, 3, 2430);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (7, 4, 3910);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (8, 4, 2794);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (8, 3, 1676);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (9, 1, 3500);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (9, 2, 5000);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (10, 2, 1200);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (10, 1, 1778);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (11, 1, 1333);
+INSERT INTO `clinic-surgery`.`clinic_has_speciality`(`clinicId`, `specialityId`, `carePrice`) VALUES (11, 2, 1229);

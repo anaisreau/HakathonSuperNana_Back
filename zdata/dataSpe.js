@@ -13,23 +13,11 @@ const dataSpe = [
     },
     {
         name : "Plastic Surgery",
-        care_type : "Hair Implant"
-    },
-    {
-        name : "Plastic Surgery",
         care_type : "Rhinoplasty"
-    },
-    {
-        name : "Dentist",
-        care_type : "Implant"
     },
     {
         name : "Procreation",
         care_type : "Infertility"
-    },
-    {
-        name : "Procreation",
-        care_type : "In Vitro Fertilization"
     },
     {
         name : "Procreation",
