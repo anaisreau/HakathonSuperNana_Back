@@ -8,8 +8,9 @@ app.use(bodyParser({
 }))
 
 const ClinicRouter = require('./routes/clinic')
+const SpeRouter = require('./routes/speciality')
 
-app.use('/', (ClinicRouter))
+app.use('/', (ClinicRouter, SpeRouter))
 
 models
     .sequelize

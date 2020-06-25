@@ -8,10 +8,10 @@ const dataClinic = require('../dataclinic')
     ClinicRouter.get('/clinic', (req, res) => {
         models
             .Clinic
-            .findAll()
-            // {include : [models.Speciality]}
+            .findAll({
+                include : [models.Speciality, models.Price]})
             .then(clinic => res.json(clinic))
-            //.then(res.status(200).send('All clinics with their speciality care'))
+            
     })
 
     ClinicRouter.post('/clinic/new', (req, res) => {
