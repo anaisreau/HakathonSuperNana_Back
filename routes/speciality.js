@@ -5,10 +5,29 @@ const dataSpe = require('../dataSpe')
 
 
 // Afficher toutes les spécialitées
+    SpeRouter.get('/speciality/:id', (req, res) => {
+        models
+            .Speciality
+            .findByPk( req.params.id,
+                {include : [models.Clinic, models.Price]})
+                
+            .then(speciality => res.json(speciality))
+            
+    })
     SpeRouter.get('/speciality', (req, res) => {
         models
             .Speciality
-            .findAll( 
+            .findAll(
+                {include : [models.Clinic, models.Price]})
+                
+            .then(speciality => res.json(speciality))
+            
+    })
+    SpeRouter.put('/speciality/price/:id', (req, res) => {
+        models
+            .Speciality
+            .update( req.body, 
+                {where : { id :req.params.id }},
                 {include : [models.Clinic, models.Price]})
                 
             .then(speciality => res.json(speciality))

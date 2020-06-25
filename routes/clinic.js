@@ -1,7 +1,7 @@
 const models = require('../models')
 const express = require('express')
 const ClinicRouter = express.Router()
-const dataClinic = require('../dataclinic')
+const dataclinic = require('../dataclinic')
 
 
 // Afficher toutes les cliniques avec leurs spécialitées
@@ -17,7 +17,7 @@ const dataClinic = require('../dataclinic')
     ClinicRouter.post('/clinic/new', (req, res) => {
         models
             .Clinic
-            .bulkCreate(dataClinic)
+            .bulkCreate(dataclinic)
             .then(clinic => res.json(clinic))
             // .then(res.send('Clinic added'))
     })

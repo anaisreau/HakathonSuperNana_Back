@@ -1,6 +1,6 @@
 const { INTEGER } = require("sequelize/types");
 
-queryInterface.createTable( 'Prices', {
+queryInterface.createTable( 'Price', {
     ClinicId: {
         type: Datatypes.INTEGER,
         allowNull: false,
@@ -20,7 +20,7 @@ queryInterface.createTable( 'Prices', {
         }
     },
     // new column for join table
-    Price: {
+    carePrice: {
       type: Datatypes.DECIMAL
     }
 })

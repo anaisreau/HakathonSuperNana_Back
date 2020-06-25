@@ -6,7 +6,8 @@ module.exports = (sequelize, Datatypes) => {
     const Speciality = sequelize.define("Speciality", {
         name : Datatypes.STRING,
         care_type : Datatypes.STRING,
-        ClinicId : Datatypes.INTEGER
+        PriceId : Datatypes.INTEGER
+        
     }, {
         timestamps : false
     })
