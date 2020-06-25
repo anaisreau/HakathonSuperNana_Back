@@ -36,10 +36,9 @@ app.get('/', (req, res) => {
         })
 
     })
-
-    // Afficher toutes les cliniques
-    app.get('/clinic', (req, res) => { SELECT clinic_has_speciality.*, specialities.*, FROM clinic_has_speciality, specialities INNER JOIN Clinics
-        connection.query('SELECT Clinics.*, specialities.* FROM Clinics, specialities INNER JOIN clinic_has_speciality AS cli ON clinicId=Clinics.idclinic JOIN clinic_has_speciality AS c ON c.specialityId=specialities.idspeciality', (err, results) => {
+    
+    app.get('/clinic', (req, res) => { 
+        connection.query('SELECT Clinics.name as ClinicName, Clinics.adress, Clinics.zip_code, Clinics.city, Clinics.country,  specialities.name as Speciality, specialities.care_type,  clinic_has_speciality.carePrice FROM Clinics INNER JOIN clinic_has_speciality ON Clinics.idclinic = clinic_has_speciality.clinicId INNER JOIN specialities ON idspeciality = clinic_has_speciality.specialityId ', (err, results) => {
             if (err) {
                 res.status(500).send(err)
             } else {
