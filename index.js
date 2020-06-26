@@ -2,12 +2,15 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const connection = require('./config/conf')
+const cors =require ('cors')
 
 app.use(express.json());
 app.use(express.urlencoded({
     extended: true
 }));
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(cors())
+
 
 app.get('/', (req, res) => {
     res.send('hello home')
@@ -48,7 +51,7 @@ app.get('/', (req, res) => {
     })
 
     app.get('/clinic/city', (req, res) => {
-        connection.query('SELECT DISTINCT city FROM Clinics', (err, results) => {
+        connection.query('SELECT Clinics.name, Clinics.adress, Clinics.zip_code, Clinics.city, Clinics.country,  specialities.name as Speciality, specialities.care_type FROM Clinics INNER JOIN clinic_has_speciality ON Clinics.idclinic = clinic_has_speciality.clinicId INNER JOIN specialities ON idspeciality = clinic_has_speciality.specialityId', (err, results) => {
             if (err) {
                 res.status(500).send('Error from getting clinics')
             } else {
@@ -82,7 +85,7 @@ app.get('/', (req, res) => {
 
     })
 
-    app.listen(3000, (err) => {
+    app.listen(3001, (err) => {
         if (err) {
             throw new Error('server is running bad')
         }
