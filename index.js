@@ -82,7 +82,7 @@ app.get('/', (req, res) => {
 
     })
 
-    app.listen(3000, (err) => {
+    app.listen(3001, (err) => {
         if (err) {
             throw new Error('server is running bad')
         }
