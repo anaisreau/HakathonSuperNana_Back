@@ -17,7 +17,7 @@ const dataclinic = require('../dataclinic')
     ClinicRouter.post('/clinic/new', (req, res) => {
         models
             .Clinic
-            .bulkCreate(dataclinic)
+            .create(dataclinic)
             .then(clinic => res.json(clinic))
             // .then(res.send('Clinic added'))
     })
