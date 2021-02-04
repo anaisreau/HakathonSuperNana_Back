@@ -15,6 +15,6 @@ app.use('/', (ClinicRouter, SpeRouter))
 models
     .sequelize
     .sync({ force: true })
-    .then(app.listen(3000), () => {
+    .then(app.listen(3002), () => {
         console.log('Server is running')
     })
