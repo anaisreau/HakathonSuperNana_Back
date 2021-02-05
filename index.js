@@ -17,7 +17,10 @@ const dataSpe = require('../HakathonSuperNana_Back/dataSpe')
 
 app.use('/', (ClinicRouter, SpeRouter))
 
-
+app.get("/", (req, res) => {
+    res.json({ message: "Welcome to SuperNanaBack" });
+  });
+  
 function clinic(){
     models
     .Clinic
